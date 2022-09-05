@@ -1,4 +1,10 @@
-.header {
-    background: pink;
+ul {
+  list-style: none;
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
 
