@@ -1,30 +1,40 @@
+/* #region-Variables */
 :root {
+    /* cColors */
     --primary-brand-color: #4D5AE5;
-    --pressed-state-color: #404BBF;
-    --dark-color: #2E2F42;
-    --success-color: #31D0AA;
-    --text-color: #434455;
+    --primary-text-color: #2E2F42;
+    --description-text: #434455;
     --subtle-text: #8E8F99;
-    --accent-color: #E7E9FC;
-    --light-color:#F4F4FD;
-    --modal-overlay: #2E2F4266;
     --hero-background: #2E2F42B2;
     --white-background: #FFFFFF;
-    --modal-background: #FCFCFC;
+
+    /* Fonts */
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+        
 }
 
+
+/* #endregion-Variables */
+
+/* #region-Base */
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--dark-color);
+    color: var(--primary-text-color);
     background-color: var(--white-background);
-}
-
-ul {
-    list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 button {
@@ -32,15 +42,28 @@ button {
     font-family: inherit;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 address {
     font-style: normal;
 }
 
-/* Header */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+/* #endregion-Base */
 
-.header 
-
-.header-logo {
+/* #region-Header */
+.header .header-logo {
     color: var(--primary-brand-color);
 }
 
@@ -59,37 +82,38 @@ address {
     letter-spacing: 0.02em;
 }
 
-.header-link.link.current {
-    color: var(--accent-color);
+.header-link {
+    color: var(--primary-text-color);
 }
 
-.header-contact {
-    color: var(--secondary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+.contact-item {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 150%;
     letter-spacing: 0.02em;
+    color: var(--text-color);
 }
 
 .logo-title {
-    color: var(--tetriary-text-color);
+    color: var(--primary-text-color);
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    text-decoration: none;
 }
 
-/* ehdHeader */
-   
-/* Hero */
+.header-link:active,
+.header-link:focus,
+.contact-link:active,
+.contact-link:focus {
+    color: var(--pressed);
+}
+/* #endregion */
 
+/* #region-Hero */
 .hero-image {
-    background-color: var(--dark-color);
-    /* width: 1440px;
-    height: 600px; */
+    background-color: var(--primary-text-color);
 }
 
 .hero-title {
@@ -107,9 +131,11 @@ address {
     letter-spacing: 0.04em;
     color: var(--white-background);
     background-color: var(--primary-brand-color);
-    
+
 
 }
+/* #endregion */
 
-/* endHero */
-
+/* *============================================================================================================================================== */
+/* #region */
+/* #endregion */
