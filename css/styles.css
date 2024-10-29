@@ -3,7 +3,7 @@
     /* Colors */
     --primary-brand-color: #4D5AE5;
     --primary-dark-color: #2E2F42;
-    --description-slate-text: #434455;
+    --primary-slate-color: #434455;
     --subtle-text: #8E8F99;
     --hero-background: #2E2F42B2;
     --white-background: #FFFFFF;
@@ -23,7 +23,7 @@
 body {
     /* font-family: monospace; */
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-dark-color);
+    color: var(--primary-slate-color);
     background-color: var(--white-background);
 }
 
@@ -136,7 +136,7 @@ p {
 .contact-link {
     line-height: 1.50;
     letter-spacing: 0.02em;
-    color: var(--description-slate-text);
+    color: var(--primary-slate-color);
 }
 
 .header-link:hover,
@@ -164,6 +164,7 @@ p {
 }
 
 .hero-btn {
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-background);
@@ -191,12 +192,13 @@ p {
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
+    color: var(--primary-dark-color);
 }
 
 .features-description {
     line-height: 1.50;
     letter-spacing: 0.02em;
-    color: var(--description-slate-text);
+    color: var(--primary-slate-color);
 }
 
 /* #endregion */
@@ -213,6 +215,8 @@ p {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-dark-color);
 }
 
 .team-list {}
@@ -227,13 +231,14 @@ p {
     line-height: 1.20;
     letter-spacing: 0.02em;
     text-align: center;
+    color: var(--primary-dark-color);
 }
 
 .team-description {
     line-height: 1.50;
     letter-spacing: 0.02em;
     text-align: center;
-    color: var(--description-slate-text);
+    color: var(--primary-slate-color);
 }
 
 /* #endregion */
@@ -247,6 +252,7 @@ p {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .portfolio-list {}
@@ -263,7 +269,7 @@ p {
 .portfolio-text {
     line-height: 1.50;
     letter-spacing: 0.02em;
-    color: var(--description-slate-text);
+    color: var(--primary-slate-color);
 }
 
 /* #endregion */
